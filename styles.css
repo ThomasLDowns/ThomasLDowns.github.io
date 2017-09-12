@@ -1,0 +1,112 @@
+body {
+    background-image: url("white-glitter-1.jpg"); 
+    background-size: auto 1000px;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+.white-bg{
+    background-color: rgba(255,255,255,1);
+    border-radius: 10px;
+}
+.header {
+    margin: 15px 5px 0px 5px;
+    padding: 20px 15px 10px 15px;
+    text-align: center;
+}
+.header-text {
+    margin: 0;
+    padding: 0;
+    color: palegoldenrod;
+    font-family: "Cookie", cursive;
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+hr {
+    border: 2px solid lightgoldenrodyellow;
+}
+.navbar-container {
+    margin: 0px 5p 5px 5px;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+}
+.navbar-btn {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background: none;
+    color: darkgrey;
+    font-family: "Playfair Display", "Georgia";
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: .3s;
+}
+.navbar-btn:hover {
+    color: white;
+    background-color: rgba(240,203,224,1);
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.body-wrapper {
+    text-align: justify;
+}
+.body-img {
+    margin: 10px;
+    border: 5px solid lightgoldenrodyellow;
+}
+.body-header {
+    padding-top: 15px;
+    font-family: "Playfair Display", "Georgia";
+}
+.body-text {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    font-family: "Raleway", sans-serif;
+}
+.footer {
+    margin: 5px 0px 5px 0px;
+    padding: 10px 0px 15px 0px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.footer-btn {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin: 0px 3px 0px 3px;
+    padding-top: 0px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(240,203,224,1);
+    vertical-align: middle;
+    font-size: 25px;
+    transition: .3s;
+}
+.footer-btn:hover {
+    color: black;
+    background-color: palegoldenrod;
+    text-decoration: none;
+}
+.footer-text {
+    display: block;
+    margin-bottom: 10px;
+    color: darkgray;
+    font-family: "Playfair Display", "Georgia";
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: .3s;
+}
+.footer-text:hover{
+    color: black;
+}
+@media only screen and (min-width: 768px) {
+    .navbar-btn {
+        display: inline-block;
+        width: 12%;
+        vertical-align: middle;
+    }
+}
