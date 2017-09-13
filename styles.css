@@ -1,3 +1,6 @@
+/* bluishpink = rgba(250,203,224,1)*/
+/* bluishpink-hover = rgba(255,150,224,.8)*/
+/* gold = rgba(184,134,11,.4)*/
 body {
     background-image: url("white-glitter-1.jpg"); 
     background-size: auto 1000px;
@@ -39,6 +42,7 @@ hr {
     padding: 5px;
     background: none;
     color: black;
+    border-radius: 10px;
     font-family: "Playfair Display", "Georgia";
     font-size: 1.5em;
     font-weight: bold;
@@ -46,10 +50,26 @@ hr {
 }
 .navbar-btn:hover {
     color: white;
-    background-color: rgba(250,203,224,1);
-    border-radius: 10px;
-    font-weight: bold;
+    background-color: rgba(255,150,224,.8);
     text-decoration: none;
+}
+.navbar-btn:active{
+    color: black;
+    text-decoration: none;
+}
+.navbar-btn:visited{
+    color: black;
+    text-decoration: none;
+}
+.active {
+    color: black;
+    background-color: rgba(184,134,11,.4);
+    border-radius: 10px;
+}
+.active:hover {
+    color: white;
+    background-color: rgba(184,134,11,.8);
+    font-weight: none;
 }
 .body-wrapper {
     text-align: left;
@@ -57,10 +77,21 @@ hr {
 .img-wrapper {
     text-align: center;
 }
-.body-img {
-    margin: 10px 0px 10px 0px;
+.body-spacers {
+    display: none;
+}
+.body-img-wide {
+    margin: auto;
+    margin-top: 10px;
     max-width: 100%;
     max-height: 300px;
+    border: 5px solid rgba(255,255,255,.5);
+}
+.body-img-tall {
+    margin: auto;
+    margin-top: 10px;
+    max-width: 350px;
+    max-height: 100%;
     border: 5px solid rgba(255,255,255,.5);
 }
 .body-text {
@@ -79,26 +110,35 @@ hr {
     font-size: 1.5em;
 }
 .body-header::first-letter{
+    content:' ';
+    margin-right 3px;
+    padding-right: 3px;
+    color: darkgoldenrod;
     font-family: "Tangerine", cursive;
     font-size: 2.2em;
+    vertical-align: middle;
+}
+.contact-btn-wrapper {
+    padding-top: 10px;
+    text-align: center;
 }
 .footer {
-    margin: 5px 0px 10px 0px;
-    padding: 5px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
+    padding: 15px 0px 10px 0px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
 }
 .footer-btn-wrapper{
-    float: left;
+    text-align: center;
 }
 .footer-btn {
     display: inline-block;
     height: 35px;
-    width: 35px;
-    margin: 0px 3px 0px 3px;
+    width: 60px;
+    margin: 0px 8px 0px 8px;
     padding-top: 0px;
-    color: white;
+    color: black;
     border-radius: 10px;
     background-color: rgba(250,203,224,1);
     vertical-align: middle;
@@ -106,22 +146,16 @@ hr {
     transition: .3s;
 }
 .footer-btn:hover {
-    color: black;
-    background-color: rgba(255,150,224,1);
+    color: white;
+    background-color: rgba(255,150,224,.8);
     text-decoration: none;
 }
-.footer-text {
-    display: inline-block;
-    float: right;
-    margin-right: 20px;
-    color: black;
-    font-family: "Playfair Display", "Georgia";
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: .3s;
+.copywrite-wrapper {
+    padding-top: 10px;
 }
-.footer-text:hover{
+.copywrite-text {
     color: darkgray;
+    font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 768px) {
     .navbar-btn {
@@ -129,19 +163,35 @@ hr {
         width: 12%;
         vertical-align: middle;
     }
+    .body-spacers{
+        display: inherit;
+    }
+    .body-img-wide{
+        margin-bottom: 10px;
+    }
+    .body-img-tall{
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
     .body-header {
         font-size: 2.3em;
-        &::first-letter{
-            font-size: 2.7em
-        }
     }
     .body-text {
         margin-top: 0px;
     }
+    .no-top-image {
+        margin: 10px;
+        vertical-align: middle
+    }
     .footer-btn-wrapper {
         float: none;
     }
-    .footer-text {
+    .footer-btn {
+        height: 35px;
+        width: 35px;
+        border-radius: 10px;
+    }
+    .footer-phone {
         float: none;
         margin-right: 0px;
         margin-bottom: 10px;
