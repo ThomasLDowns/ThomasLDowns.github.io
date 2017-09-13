@@ -2,16 +2,19 @@ body {
     background-image: url("white-glitter-1.jpg"); 
     background-size: auto 1000px;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-attachment: fixed;
 }
 .white-bg{
     background-color: rgba(255,255,255,1);
     border-radius: 10px;
 }
 .header {
-    margin: 15px 5px 0px 5px;
+    margin: 10px 5px 0px 5px;
     padding: 20px 15px 10px 15px;
     text-align: center;
+}
+.header-logo {
+    margin: auto;
 }
 .header-text {
     margin: 0;
@@ -35,7 +38,7 @@ hr {
     width: 100%;
     padding: 5px;
     background: none;
-    color: darkgrey;
+    color: black;
     font-family: "Playfair Display", "Georgia";
     font-size: 1.5em;
     font-weight: bold;
@@ -43,35 +46,51 @@ hr {
 }
 .navbar-btn:hover {
     color: white;
-    background-color: rgba(240,203,224,1);
+    background-color: rgba(250,203,224,1);
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
 }
 .body-wrapper {
-    text-align: justify;
+    text-align: left;
+}
+.img-wrapper {
+    text-align: center;
 }
 .body-img {
-    margin: 10px;
-    border: 5px solid lightgoldenrodyellow;
-}
-.body-header {
-    padding-top: 15px;
-    font-family: "Playfair Display", "Georgia";
+    margin: 10px 0px 10px 0px;
+    max-width: 100%;
+    max-height: 300px;
+    border: 5px solid rgba(255,255,255,.5);
 }
 .body-text {
     margin: 10px 0px 10px 0px;
     padding: 0px 15px 10px 15px;
     border-radius: 10px;
-    background-color: lightgoldenrodyellow;
+    background-color: rgba(255,255,255,.5);
     font-family: "Raleway", sans-serif;
+    font-size: 1.1em;
+}
+.body-header {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    font-family: "Playfair Display", cursive;
+    font-size: 1.5em;
+}
+.body-header::first-letter{
+    font-family: "Tangerine", cursive;
+    font-size: 2.2em;
 }
 .footer {
-    margin: 5px 0px 5px 0px;
-    padding: 10px 0px 15px 0px;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 0px 10px 0px;
     background-color: white;
     border-radius: 10px;
     text-align: center;
+}
+.footer-btn-wrapper{
+    float: left;
 }
 .footer-btn {
     display: inline-block;
@@ -81,32 +100,50 @@ hr {
     padding-top: 0px;
     color: white;
     border-radius: 10px;
-    background-color: rgba(240,203,224,1);
+    background-color: rgba(250,203,224,1);
     vertical-align: middle;
     font-size: 25px;
     transition: .3s;
 }
 .footer-btn:hover {
     color: black;
-    background-color: palegoldenrod;
+    background-color: rgba(255,150,224,1);
     text-decoration: none;
 }
 .footer-text {
-    display: block;
-    margin-bottom: 10px;
-    color: darkgray;
+    display: inline-block;
+    float: right;
+    margin-right: 20px;
+    color: black;
     font-family: "Playfair Display", "Georgia";
     font-size: 1.2em;
     font-weight: bold;
     transition: .3s;
 }
 .footer-text:hover{
-    color: black;
+    color: darkgray;
 }
 @media only screen and (min-width: 768px) {
     .navbar-btn {
         display: inline-block;
         width: 12%;
         vertical-align: middle;
+    }
+    .body-header {
+        font-size: 2.3em;
+        &::first-letter{
+            font-size: 2.7em
+        }
+    }
+    .body-text {
+        margin-top: 0px;
+    }
+    .footer-btn-wrapper {
+        float: none;
+    }
+    .footer-text {
+        float: none;
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 }
