@@ -43,7 +43,7 @@ hr {
     color: darkgray;
     border-radius: 10px;
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     transition: .3s;
 }
@@ -139,9 +139,11 @@ hr {
     text-align: center;
 }
 .footer-link {
+    display: block;
+    padding: 0px 10px 10px 10px;
     color: black;
     font-family: "Playfair Display", "Georgia";
-    font-size: .9em;
+    font-size: 1.2em;
 }
 .footer-link:hover {
     color: black;
@@ -156,6 +158,7 @@ hr {
     text-decoration: none;
 }
 .footer-seperator {
+    display: none;
     padding: 0px 10px 0px 10px;
     color: darkgray;
     font-size: 1.5em;
@@ -221,7 +224,12 @@ hr {
         vertical-align: middle;
     }
     .footer-link {
+        display: inline-block;
+        padding: 0;
         font-size: 1.3em;
+    }
+    .footer-seperator {
+        display: inline;
     }
     .footer-btn-wrapper {
         float: none;
