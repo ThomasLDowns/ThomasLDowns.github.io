@@ -22,11 +22,15 @@
 <div class="container-fluid site-container">
     <div id="header"></div>
     <div class="row">
-        <div class="col-md-1 body-spacer"></div>
-        <div class="col-xs-12 col-sm-5 col-md-4 img-wrapper">
-            <img class="img-responsive body-img-tall" src="wedding-invitation.jpg">
+        <div class="col-sm-1 col-md-2 body-spacer"></div>
+        <div class="col-xs-12 col-sm-4 col-md-3 img-wrapper">
+            <picture>
+                <source media="(min-width: 768px)" class="body-img-tall" srcset="wedding-invitation-tall.jpg">
+                <source media="(max-width: 767px)" srcset="wedding-invitation-cropped.jpg">
+                <img class="body-img-tall img-responsive" src="wedding-invitation.jpg" alt="Wedding Invitation">
+            </picture>
         </div>
-        <div class="col-xs-12 col-sm-7 col-md-6 body-wrapper">
+        <div class="col-xs-12 col-sm-6 col-md-5 body-wrapper">
             <div class="body-text no-top-image">
                 <h2 class="body-header">First Service Provided</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin ultricies diam et viverra. Quisque nec urna dui. In cursus, lacus at scelerisque tincidunt, lorem diam egestas nisi, ac ullamcorper ante eros id neque. Praesent imperdiet elit at elit finibus suscipit. Duis pulvinar sapien vulputate, vulputate mi nec, vehicula justo. Aenean et diam sit amet nulla sodales venenatis a quis massa.</p>
@@ -36,7 +40,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin ultricies diam et viverra. Quisque nec urna dui. In cursus, lacus at scelerisque tincidunt, lorem diam egestas nisi, ac ullamcorper ante eros id neque. Praesent imperdiet elit at elit finibus suscipit. Duis pulvinar sapien vulputate, vulputate mi nec, vehicula justo. Aenean et diam sit amet nulla sodales venenatis a quis massa.</p>
             </div>
         </div>
-        <div class="col-md-1 body-spacer"></div>
+        <div class="col-sm-1 col-md-2 body-spacer"></div>
     </div>
     <div id="footer"></div>
 </div>

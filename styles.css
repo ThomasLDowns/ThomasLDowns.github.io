@@ -1,8 +1,5 @@
-
 /* bluishpink = rgba(250,203,224,1)*/
 /* bluishpink-hover = rgba(255,150,224,.8)*/
-/* bluishpink = rgba(250,203,224,1)*/ 
-/* bluishpink-hover = rgba(255,150,224,.8)*/ 
 /* gold = rgba(184,134,11,.4)*/
 html {
     transition: .3s;
@@ -54,7 +51,7 @@ hr {
 }
 .navbar-hamburger:hover {
     color: white;
-    background-color: rgba(255,150,224,.8);
+    background-color: rgba(250,203,224,1);
 }
 .navbar-wrapper {
     text-align: center;
@@ -120,19 +117,19 @@ hr {
     display: none;
 }
 .body-img-wide {
-    margin: auto;
     margin-top: 10px;
+    max-height: 450px;
     max-width: 100%;
-    max-height: 300px;
-    border: 8px solid rgba(184,134,11,.4);
+    font-size: 0;
+    border: none;
     border-radius: 5px;
 }
 .body-img-tall {
     margin: auto;
     margin-top: 10px;
-    max-width: 100%;
-    max-height: 600px;
-    border: 8px solid rgba(184,134,11,.4);
+    max-height: 550px;
+    font-size: 0;
+    border: none;
     border-radius: 5px;
 }
 .body-text {
@@ -157,9 +154,34 @@ hr {
     font-size: 2.2em;
     vertical-align: middle;
 }
-.contact-btn-wrapper {
-    padding-top: 10px;
+.totop-container {
+    margin-top: 10px;
     text-align: center;
+}
+.totop-btn {
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    font-size: 2em;
+    border: 3px solid rgba(184,134,11,.4);
+    outline: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+.totop-btn:active {
+    color: black;
+}
+totop-btn:visited {
+    color: black;
+}
+.totop-btn:hover {
+    color: white;
+    background-color: rgba(184,134,11,.4);
+}
+.totop-icon {
+    vertical-align: middle
 }
 .footer {
     margin-bottom: 10px;
@@ -235,7 +257,7 @@ hr {
         display: none;
     }
     .navbar-container {
-        display: inline;
+        display: inline !important;
         padding-top: 10px;
         margin-bottom: 10px;
     }
@@ -253,6 +275,7 @@ hr {
         display: inherit;
     }
     .body-img-wide{
+        margin: auto;
         margin-bottom: 10px;
     }
     .body-img-tall{
@@ -269,12 +292,14 @@ hr {
         padding-bottom: 10px;
     }
     .img-wrapper {
-        padding: 10px;
         vertical-align: middle;
     }
     .no-top-image {
         margin: 10px;
         vertical-align: middle;
+    }
+    .totop-container {
+        display: none;
     }
     .footer-link {
         display: inline-block;
