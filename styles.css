@@ -1,6 +1,9 @@
 /* bluishpink = rgba(250,203,224,1)*/
 /* bluishpink-hover = rgba(255,150,224,.8)*/
 /* gold = rgba(184,134,11,.4)*/
+html {
+    transition: .3s;
+}
 body {
     background-color: white;
 }
@@ -8,6 +11,7 @@ body {
     overflow: hidden;
 }
 .header {
+    overflow: none;
     margin: 10px 5px 0px 5px;
     padding: 20px 15px 10px 15px;
     text-align: center;
@@ -30,10 +34,27 @@ hr {
     margin-left: -50%;
     border: .5px solid lightgray;
 }
+.navbar-hamburger {
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(250,203,224,1);
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+.navbar-hamburger:hover {
+    color: white;
+    background-color: rgba(255,150,224,.8);
+}
 .navbar-container {
+    display: none;
     margin: 0px 5p 5px 5px;
     padding: 10px 15px 0px 15px;
     text-align: center;
+    transition: .3s;
 }
 .navbar-btn {
     display: block;
@@ -43,7 +64,7 @@ hr {
     color: darkgray;
     border-radius: 10px;
     font-family: "Noto Sans", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     transition: .3s;
 }
@@ -167,7 +188,7 @@ hr {
     display: inline-block;
     height: 35px;
     width: 60px;
-    margin: 0px 8px 0px 8px;
+    margin: 5px 8px 0px 8px;
     padding-top: 0px;
     color: black;
     border-radius: 10px;
@@ -181,14 +202,23 @@ hr {
     background-color: rgba(255,150,224,.8);
     text-decoration: none;
 }
-.copywrite-wrapper {
+.copyright-wrapper {
+    margin-bottom: 5px;
     padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
 }
-.copywrite-text {
+.copyright-text {
     color: darkgray;
     font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 768px) {
+    .navbar-hamburger {
+        display: none;
+    }
+    .navbar-container {
+        display: inline;
+    }
     .navbar-btn {
         display: inline-block;
         width: 10%;
@@ -225,23 +255,24 @@ hr {
     }
     .footer-link {
         display: inline-block;
-        padding: 0;
+        padding-bottom: 0px;
         font-size: 1.3em;
+        vertical-align: middle;
     }
     .footer-seperator {
         display: inline;
+        vertical-align: middle
     }
     .footer-btn-wrapper {
         float: none;
+        vertical-align: middle;
     }
     .footer-btn {
         height: 35px;
         width: 35px;
         border-radius: 10px;
     }
-    .footer-phone {
-        float: none;
-        margin-right: 0px;
-        margin-bottom: 10px;
+    .copyright-wrapper {
+        padding-top: 5px;
     }
 }

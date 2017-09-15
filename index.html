@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- My Javascript -->
+    <script src="my.js"></script>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Tangerine|Playfair+Display|Raleway|Noto+Sans" rel="stylesheet">
     <!-- Font Awesome icons -->
@@ -17,26 +19,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row header">
-        <div class="col-xs-12">
-            <picture class="img-responsive header-logo">
-                  <source srcset="logo-cropped.jpg" media="(max-width: 400px)">
-                  <source srcset="logo-svg.svg">
-                  <img class="img-responsive header-logo" src="logo-cropped.jpg" alt="Joyous Events">
-            </picture>
-        </div>
-    </div>
-    <div class="row navbar-container">
-        <div class="col-xs-12">
-            <a href="#" class="navbar-btn active">Home</a>
-            <a href="services.html" class="navbar-btn">Services</a>
-            <a href="#" class="navbar-btn">Photo Gallery</a>
-            <a href="#" class="navbar-btn">About</a>
-            <a href="#" class="navbar-btn">Contact Us</a>
-        </div>
-    </div>
-    <hr>
+<div class="container-fluid site-container">
+    <div id="header"></div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-xs-12 col-md-10 img-wrapper">
@@ -45,35 +29,16 @@
         <div class="col-sm-1"></div>
     </div>
     <div class="row">
-        <div class="col-sm-1 body-spacer"></div>
-        <div class="col-xs-12 col-sm-10 body-wrapper">
+        <div class="col-sm-1 col-md-2 body-spacer"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8 body-wrapper">
             <div class="body-text">
                 <h2 class="body-header">Make Your Event Joyful</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin ultricies diam et viverra. Quisque nec urna dui. In cursus, lacus at scelerisque tincidunt, lorem diam egestas nisi, ac ullamcorper ante eros id neque. Praesent imperdiet elit at elit finibus suscipit. Duis pulvinar sapien vulputate, vulputate mi nec, vehicula justo. Aenean et diam sit amet nulla sodales venenatis a quis massa. Vestibulum orci nulla, lacinia nec pellentesque a, suscipit quis nisl. Etiam sodales leo ex, quis dignissim dui molestie vel. Ut vitae magna malesuada, hendrerit nunc in, vulputate lacus. Aliquam iaculis at ligula sed venenatis. Integer id erat ut dui pulvinar molestie in eu massa. Fusce volutpat, sapien eu placerat tempus, leo dui tristique arcu, a dictum elit erat quis quam. Vestibulum ultrices egestas ex, at ornare mi iaculis eget. Aliquam erat volutpat.</p>
             </div>
         </div>
-        <div class="col-sm-1 body-spacer"></div>
+        <div class="col-sm-1 col-md-2 body-spacer"></div>
     </div>
-    <hr>
-    <div class="footer">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="footer-btn-wrapper">
-                    <a href="#" class="footer-link">rachel.robinson.events@gmail.com</a>
-                    <span class="footer-seperator">|</span> 
-                    <a href="#" class="footer-link">1-888-888-8888</a>
-                    <span class="footer-seperator">|</span>
-                    <a href="#" class="footer-btn" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#" class="footer-btn" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row copywrite-wrapper">
-            <div class="col-xs-12">
-                <span class="copywrite-text">&copy; 2017 Joyful Events | Site Designed and Maintained by Thomas Downs</span>
-            </div>
-        </div>
-    </div>
+    <div id="footer"></div>
 </div>
 </body>
 </html>
