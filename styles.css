@@ -1,5 +1,5 @@
 /* bluishpink = rgba(250,203,224,1)*/
-/* bluishpink-hover = rgba(255,150,224,.8)*/ 
+/* bluishpink-hover = rgba(255,150,224,.8)*/
 /* gold = rgba(184,134,11,.4)*/
 html {
     transition: .3s;
@@ -13,7 +13,7 @@ body {
 .header {
     overflow: none;
     margin: 10px 5px 0px 5px;
-    padding: 20px 15px 10px 15px;
+    padding: 20px 15px 0px 15px;
     text-align: center;
 }
 .header-logo {
@@ -34,27 +34,33 @@ hr {
     margin-left: -50%;
     border: .5px solid lightgray;
 }
+.hamburger-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
 .navbar-hamburger {
-    position: absolute;
-    bottom: 10px;
-    right: -5px;
-    height: 30px;
-    width: 30px;
-    background-color: rgba(250,203,224,1);
+    width: 200%;
+    height: 18px;
+    margin-left: -50%;
+    font-size: .8em;
+    background-color: rgba(220,220,220,.8);
     border: none;
-    border-radius: 10px;
     transition: .3s;
+    outline: none;
 }
 .navbar-hamburger:hover {
     color: white;
     background-color: rgba(255,150,224,.8);
 }
-.navbar-container {
-    display: none;
-    margin: 0px 5p 5px 5px;
-    padding: 10px 15px 0px 15px;
+.navbar-wrapper {
     text-align: center;
-    transition: .3s;
+}
+.navbar-container {
+    margin: 0px 5p 5px 5px;
+    padding: 0px 15px 0px 15px;
+    display: none;
+    transition: .3s linear;
 }
 .navbar-btn {
     display: block;
@@ -79,6 +85,9 @@ hr {
 .navbar-btn:hover {
     color: rgba(184,134,11,.6);
     text-decoration: none;
+}
+.navbar-bottom {
+    padding-bottom: 15px;
 }
 .active {
     color: black;
@@ -213,11 +222,19 @@ hr {
     font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 768px) {
+    header {
+        padding-bottom: 0px;
+    }
+    header-logo{
+        margin-bottom: 0px;
+    }
     .navbar-hamburger {
         display: none;
     }
     .navbar-container {
         display: inline;
+        padding-top: 10px;
+        margin-bottom: 10px;
     }
     .navbar-btn {
         display: inline-block;
@@ -225,6 +242,9 @@ hr {
         vertical-align: middle;
         font-size: .9em;
         text-transform: uppercase;
+    }
+    .navbar-bottom {
+        padding-bottom: 5px;
     }
     .body-spacer{
         display: inherit;
