@@ -141,7 +141,6 @@ hr {
 .body-header {
     margin: 0;
     padding: 0;
-    padding-top: 15px;
     font-family: "Playfair Display", cursive;
     font-size: 1.5em;
 }
@@ -154,39 +153,107 @@ hr {
     font-size: 2.2em;
     vertical-align: middle;
 }
+.gallery-img-container {
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    max-height: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.gallery-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: .3s;
+}
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+.gallery-img-container:hover .gallery-img {
+    opacity: .7;
+}
+.gallery-img-container:hover .gallery-overlay {
+    opacity: .8;
+}
+.gallery-text {
+    white-space: nowrap; 
+    color: rgb(100,100,100);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 .header-contact-container {
     text-align: center;
+    margin-bottom: 10px;
 }
 .body-contact-container {
     text-align: center;
 }
 .body-contact {
     display: block;
-    font-size: 1.2em;
+    padding: 5px;
+    font-size: 1.1em;
+    color: black;
+    transition: .3s;
+}
+.body-contact:hover{
+    color: darkgray;
+    text-decoration: none;
+}
+.body-contact:active{
+    color: black;
+    text-decoration: none;
+}
+.body-contact:visited {
+    color: black;
+    text-decoration: none;
 }
 .contact-form-container {
     text-align: center;
 }
 .contact-form {
+    margin: auto;
     width: 97%;
     max-width: 480px;
     text-align: left;
-    font-family:"Raleway", sans-serif;
 }
 .form-label {
     display: block;
     margin: auto;
     padding: 10px 0px 10px 0px;
+    color: darkgray;
+    font-family: "Raleway", sans-serif;
+    font-size: .9em;
 }
 .form-input {
     width: 100%;
     display: block;
     padding-left: 2px;
     outline: none;
+    border-radius: 5px;
+    border: 2px solid lightgray;
 }
 .form-comment {
-    height: 300px;
+    height: 120px;
     vertical-align: top;
+}
+.submit-wrapper{
+    text-align: center;
 }
 .form-submit {
     display: relative;
@@ -194,20 +261,22 @@ hr {
     width: 100px;
     margin: 10px 0px 10px 0px;
     font-family: "Noto Sans", sans-serif;
-    background-color: white;
-    border: 2px solid rgba(250,203,224,1);
+    background-color: rgba(250,203,224,1);
+    border: none;
+    border-radius: 10px;
     transition: .3s;
 }
 .form-submit:hover {
     color: white;
+    font-weight: bold;
     background-color: rgba(255,150,224,.8);
-    border: 2px solid rgba(255,150,224,.8);
 }
 .totop-container {
     margin-top: 10px;
     text-align: center;
 }
 .totop-btn {
+    margin: auto;
     display: inline-block;
     width: 70px;
     height: 50px;
@@ -246,7 +315,7 @@ totop-btn:visited {
     display: block;
     padding: 0px 10px 10px 10px;
     color: black;
-    font-family: "Playfair Display", "Georgia";
+    font-family: "Raleway", sans-serif;
     font-size: 1.2em;
 }
 .footer-link:hover {
@@ -296,10 +365,10 @@ totop-btn:visited {
     font-family: "Raleway", sans-serif;
 }
 @media only screen and (min-width: 768px) {
-    header {
+    .header {
         padding-bottom: 0px;
     }
-    header-logo{
+    .header-logo{
         margin-bottom: 0px;
     }
     .navbar-hamburger {
@@ -347,9 +416,11 @@ totop-btn:visited {
         font-size: 1.3em;
     }
     .contact-form {
-        margin: auto;
         text-align: left;
         max-width: 640px;
+    }
+    .form-input {
+        border: solid 1px lightgray;
     }
     .img-wrapper {
         vertical-align: middle;
